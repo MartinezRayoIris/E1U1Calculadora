@@ -1,0 +1,38 @@
+package calculadora;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Kevin
+ */
+public class Operaciones {
+    Double n1,n2,r;
+    Scanner k= new Scanner(System.in);
+    
+    public void numeros(){
+    System.out.println("Ingrese el primer numero");
+    n1=k.nextDouble();
+    System.out.println("Ingrese el primer numero");
+    n2=k.nextDouble();
+    }
+    public void suma(){
+        r=n1+n2;
+        System.out.println("El resultado es"+r);
+        
+    }
+    public void resta(){
+    r=n1-n2;
+    System.out.println("el resultado es"+r);
+    }
+      public void multiplicacion(){
+    r=n1*n2;
+    System.out.println("el resultado es"+r);
+    }
+        public void division(){
+    r=n1/n2;
+    System.out.println("el resultado es"+r);
+    }
+     
+ 
+}
