@@ -1,0 +1,55 @@
+package calculadora;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Kevin
+ */
+public class Calculadora extends Operaciones {
+     Scanner k= new Scanner(System.in);
+     Operaciones f= new Operaciones();
+
+     
+   void menu(){
+       f.numeros();
+    int m;
+    System.out.println("1.suma");
+    System.out.println("2.resta");
+    System.out.println("3.multiplicacion");
+    System.out.println("4.division");
+    
+    System.out.println("que opcion desea?");
+    m=k.nextInt();
+    int s;
+    if(m<=4){
+    switch(s=m){
+        case 1:
+            f.suma();
+            break;
+        case 2:
+            f.resta();
+            break;
+        case 3:
+            f.multiplicacion();
+            break;
+        case 4:
+            f.division();
+            break;
+        default:
+            System.out.println("Opcion invalida");
+            break;
+    }
+    }else{
+    System.out.println("Esa opcion no existe");
+    k.close();
+    }
+    }
+  
+    public static void main(String[] args) {
+        Calculadora j= new Calculadora();
+        //j.numeros();
+        j.menu();
+    }
+    
+}
